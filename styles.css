@@ -1,0 +1,408 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bg-color: black;
+    --second-bg-color: #1e1e1e;
+    --text-color: white;
+    --main-color: #E5989B;
+}
+
+body {
+    font-family: 'Times New Roman', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--second-bg-color);
+}
+
+header {
+    background-color: var(--second-bg-color);
+    color: var(--text-color);
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    bottom: 30;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 40px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo img:hover{
+    transform: scale(1.1);
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none; 
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px 20px; /* Add padding to avoid overlap with fixed header */
+}
+
+.landing {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.landing h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: var(--main-color);
+}
+
+.landing p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.button {
+    background-color: var(--main-color);
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1.1em;
+    box-shadow: 0 4px 8px rgba(230, 133, 133, 0.918);
+}
+
+.button:hover {
+    background-color: var(--second-bg-color);
+    transform: translateY(-2px);
+}
+
+.content-section {
+    width: 80%;
+    max-width: 600px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.content-section h2 {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: var(--main-color);
+    font-size: 2rem;
+}
+
+.content-section p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.skillscontainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.skillsbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        180deg,
+        #fdb0b0 10%,
+        #f9d6cf 100%
+    );
+    height: 500px;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.4s ease-in-out;
+}
+
+.skillsbox:hover{
+    background: var(--second-bg-color);
+    color: var(--main-color);
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+}
+
+.skillsinfo h4{
+    align-items: center;
+    justify-content: center;
+}
+
+.skillbar{
+    width: 100%;
+    background: #6c757d;
+    height: 40px;
+    z-index: -1;
+    border-radius: 100px;
+}
+
+.skillpercent{
+    background: var(--main-color);
+    height: 40px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    overflow: hidden;
+}
+
+.projects{
+    background-color: var(--text-color);
+}
+
+.projectbox{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    place-items: center;
+    gap: 3rem;
+    row-gap: 5rem;
+}
+
+.projectcard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(
+        180deg,
+        #fdb0b0 10%,
+        #f9d6cf 100%
+    );
+    border: 2px solid var(--main-color);
+    border-radius: 3rem;
+    gap: 2rem;
+    padding: 5rem 2rem;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 5px var(--main-color);
+    transition: 0.3s ease;
+}
+
+.projectcard:hover{
+    background: var(--second-bg-color);
+    color: var(--main-color);
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+}
+
+.projectcard img{
+    max-width: 300px;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+
+.projectcard h3{
+    font-size: 3rem;
+}
+
+.projectcard p{
+    font-size: 1.6rem;
+}
+
+.resume-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.resume-image {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.download-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.download-button:hover {
+    background-color: var(--second-bg-color);
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid hsl(0, 40%, 91%);
+    border-radius: 5px;
+    background-color: hsl(0, 40%, 91%);
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: var(--second-bg-color);
+}
+
+
+.back-button {
+    background-color: #6c757d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+}
+
+.back-button:hover {
+    background-color: var(--second-bg-color);
+    transform: translateY(-2px);
+}
+
+footer {
+    background-color: var(--second-bg-color);
+    color: var(--main-color);
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+/* Dropdown Menu Styles */
+.nav-links {
+    display: flex;
+    list-style: none;
+    transition: max-height 0.3s ease;
+}
+
+.nav-links.active {
+    display: block; /* Show dropdown when active */
+}
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 0.1px solid var(--text-color);
+    font-size: 1rem;
+    border-radius: 50%;
+    color: var(--text-color);
+    margin: 0.5rem 0.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+.social-icons a:hover{
+    color: white;
+    background-color: var(--main-color);
+    transform: scale(1.2) translateY(-5px);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide links on smaller screens */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute;
+        background-color: var(--second-bg-color);
+        top: 60px; /* Position below the header */
+        right: 0;
+        width: 100%;
+        z-index: 999; /* Ensure dropdown is above other content */
+    }
+
+    .menu-icon {
+        display: block; /* Show hamburger icon on smaller screens */
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Adjust margin for vertical stacking */
+        text-align: center; /* Center align text in dropdown */
+    }
+}

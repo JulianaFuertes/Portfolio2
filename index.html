@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="icon.png" type="image/x-icon"/>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo" onclick="showLanding()">
+                    <img src="icon.png" alt="logo" />
+                </div>
+                <div class="menu-icon" onclick="toggleDropdown()">
+                    &#9776;
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#" onclick="showSection('about')">About</a></li>                    
+                    <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+                    <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+                    <li><a href="#" onclick="showSection('challenges')">Challenges and Learnings</a></li>
+                    <li><a href="#" onclick="showSection('plans')">Future Plans</a></li>
+                    <li><a href="#" onclick="showSection('resume')">Resume Page</a></li>
+                    <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="landing" id="landing">
+            <h1>Hello, I'm Juliana Fuertes</h1>
+            <p>Welcome to my portfolio!</p>
+            <div class="buttons">
+                <a href="#" class="button" onclick="showSection('about')">About Me</a>
+                <a href="#" class="button" onclick="showSection('skills')">Skills</a>
+                <a href="#" class="button" onclick="showSection('projects')">Projects</a>
+                <a href="#" class="button" onclick="showSection('challenges')">Challenges and Learnings</a></li>
+                <a href="#" class="button" onclick="showSection('plans')">Future Plans</a></li>
+                <a href="#" class="button" onclick="showSection('resume')">Resume Page</a></li>
+                <a href="#" class="button" onclick="showSection('contact')">Contact</a>
+            </div>
+        </section>
+
+
+        <section id="about" class="content-section" style="display: none;">
+            <div class="about-content">
+                <h2> <span>𓆩⟡𓆪 About Me</span> 𓆩⟡𓆪 </h2> 
+                    <p>
+                        I am a 3rd year Computer Science student of <span>Cavite State University Bacoor</span> with expanding knowledge and skillset in HTML, CSS, PHP, Java and Python.
+                    </p>
+                    <p>
+                        With deep interest in <span>programming and designing</span>, I am focused on building a solid foundation in programming, software engineering and computational problem-solving.
+                    </p>
+                    <p>
+                        Always eager to learn more, my current goal is to gain practical experience through projects for my skills to improve and develop.
+                    </p>
+                </div>
+            <button class="back-button" onclick="showLanding()">Back to Home</button>
+        </section>
+
+
+        <section id="skills" class="content-section" style="display: none;">
+            <section class="skills" id="skills">
+                <h2 class="heading"><span>𓆩⟡𓆪 Skills 𓆩⟡𓆪</span></h2>
+                
+                <div class="skillscontainer">
+                    <div class="skillsbox">
+                        <div class="skillsinfo">
+                            <h4>. ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.</h4>
+                            <h4>FRONTEND DEVELOPMENT</h4>
+                            <h4>. ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.</h4>
+                            <p><i class='bx bxl-html5'></i> HTML
+                            </p>
+                            <div class="skillbar">
+                                    <span class="skillpercent" style="width:85%"></span>
+                                </div>
+                            <p><i class='bx bxl-css3' ></i> CSS
+                            </p>
+                            <div class="skillbar">
+                                    <span class="skillpercent" style="width:65%"></span>
+                                </div>
+                            <p><i class='bx bxl-javascript'></i> JavaScript</p>
+                            </i>
+                            <div class="skillbar">
+                                    <span class="skillpercent" style="width:45%"></span>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="skillsbox">
+                        <div class="skillsinfo">
+                            <h4>. ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.</h4>
+                            <h4>BACKEND DEVELOPMENT</h4>
+                            <h4>. ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.</h4>
+                            <p><i class='bx bxs-data'></i> MySQL</p>
+                                <div class="skillbar">
+                                    <span class="skillpercent" style="width:45%"></span>
+                                </div>
+                            <p><i class='bx bx-data' ></i> MongoDB</p>
+                                <div class="skillbar">
+                                    <span class="skillpercent" style="width:25%"></span>
+                                </div>
+                        </div>
+                    </div>
+        
+                    <div class="skillsbox">
+                        <div class="skillsinfo">
+                            <h4>. ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.</h4>
+                            <h4>PROGRAMMING LANGUAGES</h4>
+                            <h4>. ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.</h4>
+                            <p><i class='bx bxl-java'></i> Java</p>
+                                <div class="skillbar">
+                                    <span class="skillpercent" style="width:55%"></span>
+                                </div>
+                            <p><i class='bx bxs-terminal'></i> Python</p>
+                            <div class="skillbar">
+                                <span class="skillpercent" style="width:60%"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <button class="back-button" onclick="showLanding()">Back to Home</button>
+        </section>
+        </section>  
+
+
+        <section id="projects" class="content-section" style="display: none;">
+            <section class="projects" id="projects">
+                <h2 class="heading"><span>𓆩⟡𓆪 Projects 𓆩⟡𓆪</span>
+                </h2>
+        
+                <div class="projectbox">
+                    <div class="projectcard">
+                        <img src="reserve.png" alt="">
+        
+                        <h3>Golden Coast: Online Booking Reservation System</h3>
+                        <p>
+                            A functional online booking reservation system to manage customer and room records. (PHP, HTML & MySQL)
+                        </p>
+                    </div>
+        
+                    <div class="projectcard">
+                        <img src="pos.png" alt="">
+        
+                        <h3>Indian Restaurant Online Ordering System</h3>
+                        <p>
+                            A responsive online ordering system that provides operational efficiency for both the restaurant and customers. (Java & MySQL)
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <button class="back-button" onclick="showLanding()">Back to Home</button>
+        </section>
+        
+
+        <section id="challenges" class="content-section" style="display: none;">
+            <div class="about-content">
+                <h2> <span>𓆩⟡𓆪 Challenges</span> 𓆩⟡𓆪 </h2> 
+                    <p>
+                        At first, I was demotivated and unsure, overwhelmed by the number of subtopics under Computer Science.
+                    </p>
+                    <p>
+                        From web development, data structures, algorithms, and databases to machine learning, cybersecurity, and cloud computing — it felt like there was an endless ocean of things to learn, and I didn’t know where to start or what to focus on.
+                    </p>
+                    <p>
+                        I constantly compared myself to others who seemed to already have polished projects, internships, or clear goals, which only added to the pressure. The more I explored, the more I realized how little I knew, and it often made me question whether I was cut out for this field at all.
+                    </p>
+
+                    <h2> <span>𓆩⟡𓆪 Learnings</span> 𓆩⟡𓆪 </h2> 
+                    <p>
+                        But over time, I learned to break things down into smaller, manageable goals rather than trying to master everything at once. I stopped viewing it as a race and started treating it like a personal journey. This shift in mindset helped me stay curious, consistent, and more open to learning.
+                    </p>
+                    <p>
+                        I learned to break this cycle by setting small, specific, and realistic goals. I began to appreciate that mastery isn’t about rushing but about building consistent habits. I realized that it's okay not to know everything, what matters more is learning how to ask the right questions, how to research solutions, and how to stay adaptable in a field that's always evolving.
+                    </p>
+                    <p>
+                        One of the most valuable lessons was learning to embrace failure. Every bug, error, or broken feature taught me something new, and I began to see these moments not as setbacks but as essential parts of the process. Building my portfolio website became a turning point. It wasn’t just about showcasing my work, but about building the confidence to own my progress, reflect on my growth, and share my journey with others.
+                    </p>
+                </div>
+            <button class="back-button" onclick="showLanding()">Back to Home</button>
+        </section>
+
+
+        <section id="plans" class="content-section" style="display: none;">
+            <h2> <span>𓆩⟡𓆪 Future Plans</span> 𓆩⟡𓆪 </h2> 
+            <p>I know my journey in Computer Science is just getting started. Moving forward, I’m aiming to strengthen my skills in both Java and Python, not just for academic projects, but to truly master them through hands-on problem-solving, real-world applications, and building efficient, clean code.
+
+                I’ve also developed a growing interest in neural networks and artificial intelligence. The idea of teaching machines to recognize patterns, make predictions, and even "learn" like humans do fascinates me. I plan to dive deeper into this field, starting with the basics of machine learning and gradually working my way toward implementing neural networks from scratch and experimenting with small AI projects.
+                
+                On the creative side, I’ve always been curious about game development, both as a way to combine programming with design, and as a fun challenge to push my problem-solving and logical thinking. Whether it’s a small 2D indie-style game or experimenting with 3D engines like Unity or Unreal, I’m excited to explore how games are built from the ground up.
+                
+                Overall, I want to focus on blending both creativity and technical depth, whether it’s making smart systems, meaningful user experiences, or just fun interactive projects. I believe that the more I build, the more I’ll learn, and the more confident I’ll become in choosing which path within Computer Science I want to specialize in. </p>
+            <button class="back-button" onclick="showLanding()">Back to Home</button>
+        </section>
+
+
+        <section id="resume" class="content-section" style="display: none;">
+            <h2>𓆩⟡𓆪 Resume Page 𓆩⟡𓆪</h2>
+            <div class="resume-container">
+                <img src="resume.png" alt="Resume" class="resume-image" />
+                <a href="resume.png" download class="download-button">Download Resume</a>
+            </div>
+            <button class="back-button" onclick="showLanding()">Back to Home</button>
+        </section>
+        
+
+        <section id="contact" class="content-section" style="display: none;">
+            <h2>𓆩⟡𓆪 Contact 𓆩⟡𓆪</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p>Email: <a href="mailto:fuertesjulianamae@gmail.com">fuertesjulianamae@gmail.com</a></p>
+                    <p>Phone: 09638094968</p>
+                    <p>Facebook: <a href="https://www.facebook.com/juliana.fuertes.1" target="_blank">Juliana Duallo Fuertes</a></p>
+                    <p>GitHub: <a href="https://github.com/JulianaFuertes" target="_blank">Juliana Fuertes</a></p>
+                </div>
+            
+                <form class="contact-form" action="your-form-handler-url" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+            
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+            
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+            
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <button class="back-button" onclick="showLanding()">Back to Home</button>
+        </section>
+    </main>
+    
+
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/juliana.fuertes.1">
+                <i class="bx bxl-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/yuulia_57/">
+                <i class="bx bxl-instagram"></i>
+            </a>
+            <a href="https://github.com/JulianaFuertes">
+                <i class='bx bxl-github'></i>
+            </a>
+        </div>
+        <p>
+            @ Juliana Fuertes 2024. All rights reserved
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
